@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Cárdapio</title>
 </head>
@@ -17,23 +17,21 @@
     </header>
 
     <div class="menu">
-        <button><h2>Almoço</h2></button>
-        <button><h2>Jantar</h2></button>
-        <button><h2>Bebidas</h2></button>
-        <button><h2>Sobremesas</h2></button>
+        <button class="menu-button" data-target="#almoco"><h2>Almoço</h2></button>
+        <button class="menu-button" data-target="#jantar"><h2>Jantar</h2></button>
+        <button class="menu-button" data-target="#bebidas"><h2>Bebidas</h2></button>
+        <button class="menu-button" data-target="#sobremesas"><h2>Sobremesas</h2></button>
     </div>
 
-    <div class="title">
-        <h1>Almoço</h1>
-    </div>
+    <div class="container" id="almoco">
 
-    <div class="container">
+        <div class="title"><h1>Almoço</h1></div>
 
         <div class="itens">
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/churrrasco.jpg" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/churrasco.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <h5 class="card-title">Churrasco completo</h5>
@@ -45,12 +43,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/lasanha.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <p class="card-text">R$ 14,50</p>
                         </div>
                     </div>
                 </div>
@@ -59,12 +57,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/feijoada.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/feijoada.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Feijoada</h5>
-                            <p class="card-text">R$ 29,50</p>
+                            <p class="card-text">R$ 30,00</p>
                         </div>
                     </div>
                 </div>
@@ -73,12 +71,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/macarronada.jpeg" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/macarronada.jpeg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Macarronada com molho da casa</h5>
-                            <p class="card-text">R$ 16,00</p>
+                            <p class="card-text">R$ 16,50</p>
                         </div>
                     </div>
                 </div>
@@ -87,12 +85,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/strognoff-frango.avif" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/strognoff-frango.avif" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12,00</p>
+                            <h5 class="card-title">Strogonoff de frango</h5>
+                            <p class="card-text">R$ 16,70</p>
                         </div>
                     </div>
                 </div>
@@ -101,39 +99,33 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/moqueca.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12,00</p>
+                            <h5 class="card-title">Moqueca de camarão</h5>
+                            <p class="card-text">R$ 27,99</p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
 
-    <div class="title">
-        <h1>Jantar</h1>
-    </div>
+    <div class="container" id="jantar">
 
-    <div class="container">
+        <div class="title"><h1>Jantar</h1></div>
 
         <div class="itens">
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/cuscuz.jpg" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/cuscuz.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Cuscuz Recheado</h5>
-                            <p class="card-text">R$ 18,00</p>
+                            <p class="card-text">R$ 14,50</p>
                         </div>
                     </div>
                 </div>
@@ -142,11 +134,25 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/hotdog.jpg" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/hotdog.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Cachorro-Quente Gourmet</h5>
+                            <p class="card-text">R$ 19,99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/hambúrguer.webp" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">hambúrguer Artesanal</h5>
                             <p class="card-text">R$ 22,00</p>
                         </div>
                     </div>
@@ -156,12 +162,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/pizza.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12,00</p>
+                            <h5 class="card-title">Pizza</h5>
+                            <p class="card-text">R$ 29,99</p>
                         </div>
                     </div>
                 </div>
@@ -170,12 +176,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/yaksoba.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Yaksoba Tradicional</h5>
+                            <p class="card-text">R$ 18,75</p>
                         </div>
                     </div>
                 </div>
@@ -184,26 +190,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/sushi.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Sushi (peça)</h5>
+                            <p class="card-text">R$ 1,50</p>
                         </div>
                     </div>
                 </div>
@@ -211,17 +203,15 @@
         </div>
     </div>
 
-    <div class="title">
-        <h1>Bebidas</h1>
-    </div>
+    <div class="container" id="bebidas">
 
-    <div class="container">
+        <div class="title"><h1>Bebidas</h1></div>
 
         <div class="itens">
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/coca-cola.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/coca-cola.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -235,7 +225,7 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/guarana.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/guarana.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -249,12 +239,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/suco-laranja.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12,00</p>
+                            <h5 class="card-title">Suco de laranja natural</h5>
+                            <p class="card-text">R$ 8,00</p>
                         </div>
                     </div>
                 </div>
@@ -263,12 +253,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/suco-maracujá.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Suco de maracujá</h5>
+                            <p class="card-text">R$ 8,00</p>
                         </div>
                     </div>
                 </div>
@@ -277,12 +267,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/pepsi.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Pepsi</h5>
+                            <p class="card-text">R$ 7,00</p>
                         </div>
                     </div>
                 </div>
@@ -291,12 +281,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/agua.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Água sem gás 500ml</h5>
+                            <p class="card-text">R$ 3,50</p>
                         </div>
                     </div>
                 </div>
@@ -304,18 +294,16 @@
         </div>
     </div>
 
+    <div class="container" id="sobremesas">
 
-    <div class="title">
-        <h1>Sobremesas</h1>
-    </div>
-
-    <div class="container">
+        <div class="title"><h1>Sobremesas</h1></div>
+    
 
         <div class="itens">
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/acai.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/acai.webp" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -329,7 +317,7 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/mousse-maracuja.jpg" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/mousse-maracuja.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -343,11 +331,25 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/torta-limao.avif" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/torta-limao.avif" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Torta de limão</h5>
+                            <p class="card-text">R$ 14,50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="img/petit-gateau.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Petit Gateau</h5>
                             <p class="card-text">R$ 12,00</p>
                         </div>
                     </div>
@@ -357,12 +359,12 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/esfiha.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Esfiha doce</h5>
+                            <p class="card-text">R$ 6,50</p>
                         </div>
                     </div>
                 </div>
@@ -371,35 +373,19 @@
             <div class="card mb-3">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
+                        <img src="img/sorvete.jpg" class="img-fluid rounded-start" alt="">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
+                            <h5 class="card-title">Sorvete na casquinha</h5>
+                            <p class="card-text">R$ 5,75</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="card mb-3">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="img/lasanha-frango.webp" class="img-fluid rounded-start" alt="lasanha">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Lasanha a bolonhesa com creme branco</h5>
-                            <p class="card-text">R$ 12</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 </body>
-
 </html>
