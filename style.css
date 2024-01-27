@@ -1,14 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #442A00 ;
+    background-color: #FF8C00;
     flex-direction: column;
 }
 
@@ -27,17 +30,57 @@ header img {
     margin-bottom: -120px;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 12px;
+    z-index: 100;
+    color: #442A00;
+    
+}
+.menu h2:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #442A00;
+}
+
 .container{
-    background-color: #FF8C00;
-    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    padding: 8.4rem;
+    color: #442A00;
+    flex-direction: column;
 }
 
 .itens{
-    background-color: aliceblue;
     display: flex;
-    height: 250px;
-    width: 250px;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.card{
+    width: 100%;
+    box-shadow: 2px 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
