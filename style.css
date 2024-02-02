@@ -86,4 +86,14 @@ button{
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
     opacity: 0.8;
+    font-size: x-large;
 }
+
+/* Adicione regras de estilo para a imagem */
+.card .col-md-4 img {
+    max-width: 80%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
